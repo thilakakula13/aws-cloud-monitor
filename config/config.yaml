@@ -1,0 +1,17 @@
+aws:
+  region: us-east-1
+  profile: default
+
+thresholds:
+  monthly_cost_usd: 100.0
+  idle_cpu_percent: 5.0
+  unattached_ebs_days: 7
+  old_snapshots_days: 30
+
+alerts:
+  sns_topic_arn: "arn:aws:sns:us-east-1:YOUR_ACCOUNT_ID:cloud-monitor-alerts"
+  email: "your-email@example.com"
+
+report:
+  output_dir: "./reports"
+  formats: ["csv", "html"]

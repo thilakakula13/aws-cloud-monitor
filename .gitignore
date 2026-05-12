@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.env
+venv/
+.venv/
+
+# Reports output
+reports/
+
+# AWS credentials (never commit these)
+.aws/
+*.pem
